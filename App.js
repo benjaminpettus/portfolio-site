@@ -1,0 +1,49 @@
+import React from 'react';
+class App extends React.Component {
+  render(){
+    return (
+        <div className="section-home">
+          <div className="hero-wrapper">
+            <h1 className="title-page">Benjamin Pettus</h1>
+
+          <div class="about-me">
+            <h2>About</h2>
+            <p>Web Developer/Designer based out of Honolulu, Hi</p>
+          </div>
+
+          <div class="web-projects">
+            <h2>Web</h2>
+            <ul>
+              <li class="project-title">Get-A-Life
+                <span class="project-desc">Stuff</span>
+                <span class="project-link">
+                  <a href="http://getalife.events">View Project</a>
+                </span>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="design-projects">
+            <h2>Design</h2>
+            <p></p>
+          </div>
+
+          <span class="footer">
+            <p>Benjamin Pettus 2016</p><a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
+          </span>
+
+          </div>
+
+        </div>
+
+        
+
+    );
+  }
+}
+
+  //stateless function component
+// const App = () => <h1>NSJJ</h1>
+export default App
