@@ -43,7 +43,8 @@ class App extends React.Component {
   }
 }
 var about = {
-  backgroundColor: 'red'
+  backgroundColor: 'red',
+ 
 }
 
 var web = {
