@@ -9,7 +9,6 @@ class App extends React.Component {
           <div style={about}>
             <h2>About</h2>
             <p>Web Developer/Designer based out of Honolulu, Hawaii</p>
-            <p>this is my running react project portfolio site</p>
           </div>
 
           <div style={web}>
@@ -46,8 +45,10 @@ class App extends React.Component {
 var about = {
   color: 'white',
   backgroundColor: 'purple',
-  backgroundRepeat: 'none',
+  backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
+  backgroundRepeat: 'no',
   height: 550
+  
 }
 
 var web = {
