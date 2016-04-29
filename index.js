@@ -20075,7 +20075,7 @@
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "Web Developer/Designer based out of Honolulu, Hi"
+	              "Web Developer/Designer based out of Honolulu, Hawaii"
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -20143,7 +20143,11 @@
 	}(_react2.default.Component);
 
 	var about = {
-	  backgroundColor: 'red'
+	  color: 'white',
+	  backgroundColor: 'purple',
+	  backgroundImage: 'url(' + "./assets/img/starry.jpg" + ')',
+	  backgroundRepeat: 'no',
+	  height: 550
 
 	};
 
