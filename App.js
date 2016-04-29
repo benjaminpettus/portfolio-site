@@ -8,7 +8,7 @@ class App extends React.Component {
 
           <div style={about}>
             <h2>About</h2>
-            <p>Web Developer/Designer based out of Honolulu, Hi</p>
+            <p>Web Developer/Designer based out of Honolulu, Hawaii</p>
           </div>
 
           <div style={web}>
@@ -44,7 +44,7 @@ class App extends React.Component {
 }
 var about = {
   backgroundColor: 'red',
- 
+
 }
 
 var web = {
