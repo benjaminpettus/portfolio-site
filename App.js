@@ -6,12 +6,12 @@ class App extends React.Component {
           <div className="hero-wrapper">
             <h1 className="title-page">Benjamin Pettus</h1>
 
-          <div class="about-me">
+          <div style={about}>
             <h2>About</h2>
             <p>Web Developer/Designer based out of Honolulu, Hi</p>
           </div>
 
-          <div class="web-projects">
+          <div style={web}>
             <h2>Web</h2>
             <ul>
               <li class="project-title">Get-A-Life
@@ -22,10 +22,9 @@ class App extends React.Component {
               </li>
 
             </ul>
-
           </div>
 
-          <div class="design-projects">
+          <div style={design}>
             <h2>Design</h2>
             <p></p>
           </div>
@@ -42,6 +41,17 @@ class App extends React.Component {
 
     );
   }
+}
+var about = {
+  backgroundColor: 'red'
+}
+
+var web = {
+  backgroundColor: 'gray'
+}
+
+var design = {
+  backgroundColor: 'lavender'
 }
 
   //stateless function component
