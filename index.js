@@ -20055,15 +20055,11 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "section-home" },
+	        { className: "container", style: container },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "hero-wrapper" },
-	          _react2.default.createElement(
-	            "h1",
-	            { className: "title-page" },
-	            "Benjamin Pettus"
-	          ),
+	          _react2.default.createElement("div", { style: header }),
 	          _react2.default.createElement(
 	            "div",
 	            { style: about },
@@ -20102,9 +20098,13 @@
 	                  "span",
 	                  { "class": "project-link" },
 	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "http://getalife.events" },
-	                    "View Project"
+	                    "button",
+	                    null,
+	                    _react2.default.createElement(
+	                      "a",
+	                      { href: "http://getalife.events" },
+	                      "View Project"
+	                    )
 	                  )
 	                )
 	              )
@@ -20122,7 +20122,7 @@
 	          ),
 	          _react2.default.createElement(
 	            "span",
-	            { "class": "footer" },
+	            { style: footer },
 	            _react2.default.createElement(
 	              "p",
 	              null,
@@ -20132,6 +20132,11 @@
 	              "a",
 	              { href: "https://www.linkedin.com/in/benjaminpettus" },
 	              "linkedin"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "benjaminpettus@gmail.com"
 	            )
 	          )
 	        )
@@ -20142,21 +20147,49 @@
 	  return App;
 	}(_react2.default.Component);
 
+	var container = {
+	  boxSizing: 'border-box'
+	};
+
+	var header = {
+	  backgroundImage: 'url(' + "./assets/img/portfolio-name.jpg" + ')',
+	  backgroundRepeat: 'no-repeat',
+	  height: 200
+
+	};
+
 	var about = {
+	  display: 'flex',
+	  flexDirection: 'column',
 	  color: 'white',
-	  backgroundColor: 'purple',
 	  backgroundImage: 'url(' + "./assets/img/starry.jpg" + ')',
-	  backgroundRepeat: 'no',
+	  backgroundRepeat: 'no-repeat',
 	  height: 550
 
 	};
 
 	var web = {
-	  backgroundColor: 'gray'
+	  backgroundColor: 'gray',
+	  display: 'flex',
+	  flexDirection: 'row',
+	  justifyContent: 'space-between',
+	  flexWrap: 'nowrap',
+	  alignSelf: 'auto',
+	  alignContent: 'flex-start',
+	  height: 300
 	};
 
 	var design = {
-	  backgroundColor: 'lavender'
+	  display: 'flex',
+	  backgroundColor: 'lavender',
+	  height: 500
+	};
+
+	var footer = {
+	  display: 'flex',
+	  flexDirection: 'row',
+	  justifyContent: 'center',
+	  alignItems: 'center'
 	};
 
 	//stateless function component
