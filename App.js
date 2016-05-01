@@ -11,18 +11,19 @@ class App extends React.Component {
             <p>Web Developer/Designer based out of Honolulu, Hawaii</p>
           </div>
 
-          <div style={web}>
-            <h2>Web</h2>
+          <div style={web}>WEB
             <ul>
-              <li class="project-title">Get-A-Life
-                <span class="project-desc">Stuff</span>
-                <span class="project-link">
-                  <button>
-                    <a href="http://getalife.events">View Project</a>
-                  </button>
-                </span>
-              </li>
-
+              <div>
+                <li style={projects}>Get-A-Life
+                  <div>Project discription</div>
+                  <div>
+                    <button>
+                      <a href="http://getalife.events">View Project</a>
+                    </button>
+                  
+                  </div>
+                </li>
+              </div>
             </ul>
           </div>
 
@@ -68,15 +69,17 @@ var about = {
 
 }
 
-var web = {
-  backgroundColor: 'gray',
+var web = { 
   display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between', 
-  flexWrap: 'nowrap', 
-  alignSelf: 'auto',
-  alignContent: 'flex-start',
-  height: 150
+  flexDirection: 'column',
+  backgroundColor: 'gray'
+
+}
+
+var projects = {
+  display: 'flex',
+  flexDirection: 'row'
+ 
 }
 
 var design = {
