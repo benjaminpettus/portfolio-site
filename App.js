@@ -2,10 +2,10 @@ import React from 'react';
 class App extends React.Component {
   render(){
     return (
-        <div className="section-home">
+        <div className="container" style={container}>
           <div className="hero-wrapper">
-            <h1 className="title-page">Benjamin Pettus</h1>
-
+            
+          <div style={header}></div>
           <div style={about}>
             <h2>About</h2>
             <p>Web Developer/Designer based out of Honolulu, Hawaii</p>
@@ -17,7 +17,9 @@ class App extends React.Component {
               <li class="project-title">Get-A-Life
                 <span class="project-desc">Stuff</span>
                 <span class="project-link">
-                  <a href="http://getalife.events">View Project</a>
+                  <button>
+                    <a href="http://getalife.events">View Project</a>
+                  </button>
                 </span>
               </li>
 
@@ -42,20 +44,44 @@ class App extends React.Component {
     );
   }
 }
-var about = {
-  color: 'white',
-  backgroundColor: 'purple',
-  backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
-  backgroundRepeat: 'no',
-  height: 550
+
+var container = { 
+  boxSizing: 'border-box',
   
+  // margin: 0,
+  // padding: 
+}
+var header = {
+  backgroundImage : 'url(' + "./assets/img/portfolio-name.jpg" + ')',
+  backgroundRepeat: 'no-repeat',
+  height: 200
+
+}
+
+
+var about = {
+  display: 'flex',
+  flexDirection: 'column',
+  color: 'white',
+  backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
+  backgroundRepeat: 'no-repeat',
+  height: 550
+
 }
 
 var web = {
-  backgroundColor: 'gray'
+  backgroundColor: 'gray',
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'flex-start', 
+  flexWrap: 'nowrap', 
+  alignSelf: 'auto',
+  flexGrow: 1,
+  alignContent: 'flex-start'
 }
 
 var design = {
+  display: 'flex',
   backgroundColor: 'lavender'
 }
 
