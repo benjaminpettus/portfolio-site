@@ -31,8 +31,9 @@ class App extends React.Component {
             <p></p>
           </div>
 
-          <span class="footer">
+          <span style={footer}>
             <p>Benjamin Pettus 2016</p><a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
+            <p>benjaminpettus@gmail.com</p>
           </span>
 
           </div>
@@ -47,10 +48,8 @@ class App extends React.Component {
 
 var container = { 
   boxSizing: 'border-box',
-  
-  // margin: 0,
-  // padding: 
 }
+
 var header = {
   backgroundImage : 'url(' + "./assets/img/portfolio-name.jpg" + ')',
   backgroundRepeat: 'no-repeat',
@@ -73,16 +72,24 @@ var web = {
   backgroundColor: 'gray',
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'flex-start', 
+  justifyContent: 'space-between', 
   flexWrap: 'nowrap', 
   alignSelf: 'auto',
-  flexGrow: 1,
-  alignContent: 'flex-start'
+  alignContent: 'flex-start',
+  height: 300
 }
 
 var design = {
   display: 'flex',
-  backgroundColor: 'lavender'
+  backgroundColor: 'lavender',
+  height: 500
+}
+
+var footer = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center'
 }
 
   //stateless function component
