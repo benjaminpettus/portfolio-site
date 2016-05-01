@@ -60,6 +60,7 @@ var header = {
 
 var about = {
   display: 'flex',
+  color: 'white',
   flexDirection: 'column',
   backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
   backgroundRepeat: 'no-repeat',
@@ -75,7 +76,7 @@ var web = {
   flexWrap: 'nowrap', 
   alignSelf: 'auto',
   alignContent: 'flex-start',
-  height: 300
+  height: 150
 }
 
 var design = {
