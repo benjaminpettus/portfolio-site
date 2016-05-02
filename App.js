@@ -1,4 +1,7 @@
 import React from 'react';
+import Gallery from 'react-photo-gallery';
+
+
 class App extends React.Component {
   render(){
     return (
@@ -7,29 +10,31 @@ class App extends React.Component {
             
           <div style={header}></div>
           <div style={about}>
-            <h2>About</h2>
-            <p>Web Developer/Designer based out of Honolulu, Hawaii</p>
+            <h2>about</h2>
+            <p>Web Developer/Designer<br />
+               Honolulu, Hawaii<br />
+            </p>
           </div>
-
-          <div style={web}>WEB
+          <div style={web}><h2>web</h2>
             <ul>
               <div>
+                <hr style={rule}></hr>
                 <li style={projects}>Get-A-Life
                   <div>Project discription</div>
                   <div>
                     <button>
                       <a href="http://getalife.events">View Project</a>
                     </button>
-                  
                   </div>
                 </li>
+              <hr style={rule}></hr>
               </div>
             </ul>
           </div>
 
           <div style={design}>
-            <h2>Design</h2>
-            <p></p>
+            <h2>design</h2>
+             <Gallery photos={PHOTO_SET} />
           </div>
 
           <span style={footer}>
@@ -61,32 +66,76 @@ var header = {
 
 var about = {
   display: 'flex',
-  color: 'white',
+  color: 'White',
+  backgroundColor: 'Orange',
   flexDirection: 'column',
-  backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
+  // backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
   backgroundRepeat: 'no-repeat',
-  height: 550
+  height: 350
 
 }
 
 var web = { 
   display: 'flex',
+  color: 'white',
   flexDirection: 'column',
-  backgroundColor: 'gray'
+  backgroundColor: 'teal'
 
 }
 
 var projects = {
   display: 'flex',
-  flexDirection: 'row'
+  color: 'white',
+  flexDirection: 'row',
+
  
+}
+
+var rule = {
+  display: 'flex',
+  alignItems: 'center'
+
 }
 
 var design = {
   display: 'flex',
-  backgroundColor: 'lavender',
+  color: 'white',
+  backgroundColor: 'purple',
   height: 500
 }
+
+const PHOTO_SET = [
+  {
+    src: 'http://example.com/example/img1_small.jpg',
+    width: 681,
+    height: 1024,
+    aspectRatio: 1.5,
+    lightboxImage:{
+    src: 'http://example.com/example/img1_large.jpg',
+    srcset: [
+      'http://example.com/example/img1_1024.jpg 1024w',
+      'http://example.com/example/img1_800.jpg 800w',
+      'http://example.com/example/img1_500.jpg 500w',
+      'http://example.com/example/img1_320.jpg 320w',
+    ]
+    }
+  },
+  {
+    src: 'http://example.com/example/img2_small.jpg',
+    width: 600,
+    height: 600,
+    aspectRatio: 1,
+    lightboxImage:{
+    src: 'http://example.com/example/img2_large.jpg',
+    srcset: [
+      'http://example.com/example/img2_1024.jpg 1024w',
+      'http://example.com/example/img2_800.jpg 800w',
+      'http://example.com/example/img2_500.jpg 500w',
+      'http://example.com/example/img2_320.jpg 320w',
+    ]
+    }
+  }
+];
 
 var footer = {
   display: 'flex',
