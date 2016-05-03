@@ -99,39 +99,33 @@ var rule = {
 
 var design = {
   display: 'flex',
-  color: 'white',
-  backgroundColor: 'purple',
-  height: 500
+  color: 'white'
+  
+  
 }
 
 const PHOTO_SET = [
   {
-    src: 'http://example.com/example/img1_small.jpg',
-    width: 681,
+    src: "./assets/img/starry.jpg", 
+    width: 340,
     height: 1024,
     aspectRatio: 1.5,
     lightboxImage:{
-    src: 'http://example.com/example/img1_large.jpg',
+    src: "./assets/img/starry.jpg",
     srcset: [
-      'http://example.com/example/img1_1024.jpg 1024w',
-      'http://example.com/example/img1_800.jpg 800w',
-      'http://example.com/example/img1_500.jpg 500w',
-      'http://example.com/example/img1_320.jpg 320w',
+      "./assets/img/starry.jpg"
     ]
     }
   },
   {
-    src: 'http://example.com/example/img2_small.jpg',
+    src: "./assets/img/starry.jpg",
     width: 600,
     height: 600,
     aspectRatio: 1,
     lightboxImage:{
     src: 'http://example.com/example/img2_large.jpg',
     srcset: [
-      'http://example.com/example/img2_1024.jpg 1024w',
-      'http://example.com/example/img2_800.jpg 800w',
-      'http://example.com/example/img2_500.jpg 500w',
-      'http://example.com/example/img2_320.jpg 320w',
+     "./assets/img/starry.jpg"
     ]
     }
   }
