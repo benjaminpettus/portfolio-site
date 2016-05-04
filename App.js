@@ -152,7 +152,7 @@ const PHOTO_SET = [
     aspectRatio: 1.5,
     lightboxShowImageCount: false,
     lightboxImage:{
-    src: "./assets/img/kimie.jpg",
+    src: "./assets/img/kimie_300.jpg",
     srcset: [
      "./assets/img/kimie.jpg"
     ]
