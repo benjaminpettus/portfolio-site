@@ -135,7 +135,7 @@ const PHOTO_SET = [
   {
     src: "./assets/img/helldown_300.jpg", 
     width: 300,
-    height: 1450,
+    height: 450,
     aspectRatio: 1.5,
     lightboxShowImageCount: false,
     lightboxImage:{
@@ -149,7 +149,7 @@ const PHOTO_SET = [
     src: "./assets/img/kimie_300.jpg",
     width: 300,
     height: 450,
-    aspectRatio: 1,
+    aspectRatio: 1.5,
     lightboxShowImageCount: false,
     lightboxImage:{
     src: "./assets/img/kimie.jpg",
