@@ -105,10 +105,24 @@ var design = {
 }
 
 const PHOTO_SET = [
+  
+  {
+    src: "./assets/img/skittles.jpg", 
+    width: 450,
+    height: 300,
+    aspectRatio: 1.2,
+    lightboxShowImageCount: false,
+    lightboxImage:{
+    src: "./assets/img/skittles.jpg",
+    srcset: [
+      "./assets/img/skittles.jpg"
+    ]
+    }
+  },
   {
   src: "./assets/img/irielove.jpg", 
-    width: 340,
-    height: 1024,
+    width: 300,
+    height: 450,
     aspectRatio: 1.5,
     lightboxShowImageCount: false,
     lightboxImage:{
@@ -120,8 +134,8 @@ const PHOTO_SET = [
   },
   {
     src: "./assets/img/helldown_300.jpg", 
-    width: 340,
-    height: 1024,
+    width: 300,
+    height: 1450,
     aspectRatio: 1.5,
     lightboxShowImageCount: false,
     lightboxImage:{
@@ -133,14 +147,27 @@ const PHOTO_SET = [
   },
   {
     src: "./assets/img/kimie_300.jpg",
-    width: 600,
-    height: 600,
+    width: 300,
+    height: 450,
     aspectRatio: 1,
     lightboxShowImageCount: false,
     lightboxImage:{
     src: "./assets/img/kimie.jpg",
     srcset: [
      "./assets/img/kimie.jpg"
+    ]
+    }
+  },
+  {
+    src: "./assets/img/mikelove_300.jpg", 
+    width: 450,
+    height: 300,
+    aspectRatio: 1.5,
+    lightboxShowImageCount: false,
+    lightboxImage:{
+    src: "./assets/img/mikelove_300.jpg",
+    srcset: [
+      "./assets/img/mikelove_300.jpg"
     ]
     }
   }
