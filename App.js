@@ -106,26 +106,41 @@ var design = {
 
 const PHOTO_SET = [
   {
-    src: "./assets/img/starry.jpg", 
+  src: "./assets/img/irielove.jpg", 
     width: 340,
     height: 1024,
     aspectRatio: 1.5,
+    lightboxShowImageCount: false,
     lightboxImage:{
-    src: "./assets/img/starry.jpg",
+    src: "./assets/img/irielove.jpg",
     srcset: [
-      "./assets/img/starry.jpg"
+      "./assets/img/irielove.jpg"
     ]
     }
   },
   {
-    src: "./assets/img/starry.jpg",
+    src: "./assets/img/helldown_300.jpg", 
+    width: 340,
+    height: 1024,
+    aspectRatio: 1.5,
+    lightboxShowImageCount: false,
+    lightboxImage:{
+    src: "./assets/img/helldown_300.jpg",
+    srcset: [
+      "./assets/img/helldown_300.jpg"
+    ]
+    }
+  },
+  {
+    src: "./assets/img/kimie_300.jpg",
     width: 600,
     height: 600,
     aspectRatio: 1,
+    lightboxShowImageCount: false,
     lightboxImage:{
-    src: 'http://example.com/example/img2_large.jpg',
+    src: "./assets/img/kimie.jpg",
     srcset: [
-     "./assets/img/starry.jpg"
+     "./assets/img/kimie.jpg"
     ]
     }
   }
