@@ -145,16 +145,16 @@ const PHOTO_SET = [
     ]
     }
   },
-  {
-    src: "./assets/img/kimie_300.jpg",
+{
+  src: "./assets/img/kimie_300.jpg", 
     width: 300,
     height: 450,
     aspectRatio: 1.5,
     lightboxShowImageCount: false,
     lightboxImage:{
-    src: "./assets/img/kimie_300.jpg",
+    src: "./assets/img/kimie_600.jpg",
     srcset: [
-     "./assets/img/kimie.jpg"
+      "./assets/img/kimie.jpg"
     ]
     }
   },
