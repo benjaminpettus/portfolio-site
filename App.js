@@ -2,36 +2,39 @@ import React from 'react';
 import Gallery from 'react-photo-gallery';
 
 
+
+
 class App extends React.Component {
   render(){
     return (
-        <div className="container" style={container}>
-          <div className="hero-wrapper">
+        <container fluid={true}>
+        <div>
+          
+        <div className="hero-wrapper">
             
-          <div style={header}></div>
+       
           <div style={about}>
             <h2>about</h2>
             <p>Web Developer/Designer<br />
                Honolulu, Hawaii<br />
             </p>
           </div>
+          <hr />
           <div style={web}><h2>web</h2>
-            <ul>
+            <ul className='mui-list--inline'>
               <div>
-                <hr style={rule}></hr>
+                <divider />
                 <li style={projects}>Get-A-Life
-                  <div>Project discription</div>
+                  <div>Map-based events app built using Angular, Ionic, and Leaflet</div>
                   <div>
-                    <button>
-                      <a href="http://getalife.events">View Project</a>
-                    </button>
+                    <button style={project_button}><a href="http://getalife.events">View Project</a></button>
                   </div>
                 </li>
-              <hr style={rule}></hr>
+              
               </div>
             </ul>
           </div>
-
+          <hr />
           <div style={design}>
             <h2>design</h2>
              <Gallery photos={PHOTO_SET} />
@@ -45,6 +48,7 @@ class App extends React.Component {
           </div>
 
         </div>
+        </container>
 
         
 
@@ -52,8 +56,15 @@ class App extends React.Component {
   }
 }
 
+
 var container = { 
+  display: 'flex', 
+  flexWrap: 'wrap',
   boxSizing: 'border-box',
+}
+
+
+var mainNav = {
 }
 
 var header = {
@@ -65,9 +76,8 @@ var header = {
 
 
 var about = {
-  display: 'flex',
-  color: 'White',
-  backgroundColor: 'Orange',
+  color: 'black',
+  backgroundColor: 'white',
   flexDirection: 'column',
   // backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
   backgroundRepeat: 'no-repeat',
@@ -77,17 +87,23 @@ var about = {
 
 var web = { 
   display: 'flex',
-  color: 'white',
+  color: 'black',
   flexDirection: 'column',
-  backgroundColor: 'teal'
+  backgroundColor: 'white'
 
 }
 
 var projects = {
   display: 'flex',
-  color: 'white',
+  color: 'black',
   flexDirection: 'row',
+  justifyContent: 'space-around'
+ }
 
+var project_button = {
+  border: 'none',
+  backgroundColor: 'white',
+  color: 'purple'
  
 }
 

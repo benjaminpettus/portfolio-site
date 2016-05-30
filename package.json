@@ -11,6 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react-dom": "^15.0.1",
+    "react-uikit-base": "^1.0.0"
+  },
+  "devDependencies": {
+    "muicss": "^0.5.8"
   }
 }
