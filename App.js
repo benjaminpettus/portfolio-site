@@ -1,5 +1,8 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Gallery from 'react-photo-gallery';
+
+
 
 
 
@@ -7,21 +10,28 @@ import Gallery from 'react-photo-gallery';
 class App extends React.Component {
   render(){
     return (
-        <container fluid={true}>
-        <div>
-          
-        <div className="hero-wrapper">
-            
+        
+        <div className="container">
+
        
+          <nav style={mainNav}>
+            <button><a href="https://github.com/benjaminpettus">GitHub</a></button>
+            <button><a href="https://github.com/benjaminpettus">Linkedin</a></button>
+          </nav>
+     
+          
+        
           <div style={about}>
             <h2>about</h2>
             <p>Web Developer/Designer<br />
                Honolulu, Hawaii<br />
             </p>
           </div>
+
           <hr />
+
           <div style={web}><h2>web</h2>
-            <ul className='mui-list--inline'>
+            <ul >
               <div>
                 <divider />
                 <li style={projects}>Get-A-Life
@@ -34,7 +44,9 @@ class App extends React.Component {
               </div>
             </ul>
           </div>
+
           <hr />
+
           <div style={design}>
             <h2>design</h2>
              <Gallery photos={PHOTO_SET} />
@@ -45,11 +57,11 @@ class App extends React.Component {
             <p>benjaminpettus@gmail.com</p>
           </span>
 
-          </div>
+    
 
         </div>
-        </container>
-
+      
+      
         
 
     );
@@ -65,15 +77,17 @@ var container = {
 
 
 var mainNav = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'flex-end',
+  color: 'black',
+  height: 70
 }
-
-var header = {
-  backgroundImage : 'url(' + "./assets/img/portfolio-name.jpg" + ')',
-  backgroundRepeat: 'no-repeat',
-  height: 200
-
+var iconz = {
+  display: 'flex',
+  flexDirection: 'row',
+  listStyle: 'none'
 }
-
 
 var about = {
   color: 'black',
@@ -193,9 +207,10 @@ var footer = {
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+  color: 'white',
+  backgroundColor: 'gray',
+  height: 150
 }
 
-  //stateless function component
-// const App = () => <h1>NSJJ</h1>
 export default App
