@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from 'react-photo-gallery';
-import Navagation from 'react-bootstrap';
+
+import Navbar from 'react-bootstrap/lib/Navbar';
+
 
 
 
@@ -12,23 +14,26 @@ class App extends React.Component {
   render(){
     return (
         
-        <div className="container">
+      <div className="container">
 
-       
-          <nav style={navbar}>
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+       <Navbar inverse fluid fixedTop>
+     
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href="#">Logo</a>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+
+        <Navbar.Collapse>
+          <nav pullRight>
+            <a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
+           
+          </nav>
+        </Navbar.Collapse>
+   
+      
+      </Navbar>
      
           
         
@@ -64,7 +69,8 @@ class App extends React.Component {
           </div>
 
           <span style={footer}>
-            <p>Benjamin Pettus 2016</p><a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
+            <p>Benjamin Pettus 2016</p>
+            <a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
             <p>benjaminpettus@gmail.com</p>
           </span>
 
