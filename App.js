@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from 'react-photo-gallery';
+import Navagation from 'react-bootstrap';
 
 
 
@@ -14,10 +15,20 @@ class App extends React.Component {
         <div className="container">
 
        
-          <nav style={mainNav}>
-            <button><a href="https://github.com/benjaminpettus">GitHub</a></button>
-            <button><a href="https://github.com/benjaminpettus">Linkedin</a></button>
-          </nav>
+          <nav style={navbar}>
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
      
           
         
@@ -68,6 +79,17 @@ class App extends React.Component {
   }
 }
 
+var navbar = {
+    marginBottom: 0,
+    backgroundColor: 'purple',
+    color: 'white', 
+    zIndex: 9999,
+    border: 0,
+    fontSize: 12,
+    lineHeight: 1.42857143,
+    letterSpacing: 4,
+    borderRadius: 0,
+}
 
 var container = { 
   display: 'flex', 
