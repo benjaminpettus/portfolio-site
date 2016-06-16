@@ -14,7 +14,7 @@ class App extends React.Component {
   render(){
     return (
         
-      <div fluid className="container">
+      <div fluid className="container border-box">
 
        <Navbar fluid fixedTop style={navi}>
      
@@ -26,16 +26,16 @@ class App extends React.Component {
         </Navbar.Header>
 
         <Navbar.Collapse>
-          <nav>
-            <a href="https://www.linkedin.com/in/benjaminpettus"></a>
-           
+          <nav style={barlinks}>
+            <a href="https://www.linkedin.com/in/benjaminpettus">LinkedIn</a>
+            <a href="https://github.com/benjaminpettus">Github</a>
           </nav>
         </Navbar.Collapse>
       </Navbar>
      
           
-      <Jumbotron>  
-        <div>
+      <Jumbotron style={jumbo} className="row no-gutter text-center">  
+        <div className="col-md-12">
           <h2>about</h2>
             <p>Web Developer/Designer<br />
                  Honolulu, Hawaii<br />
@@ -47,7 +47,8 @@ class App extends React.Component {
 
      
 
-          <div style={web}><h2>web</h2>
+          <div style={web} className="row no-gutter">
+          <h2>web</h2>
             <ul >
               <div>
                 <divider />
@@ -64,12 +65,12 @@ class App extends React.Component {
 
      
 
-          <div style={design}>
+          <div style={design} className="row no-gutter">
             <h2>design</h2>
              <Gallery photos={PHOTO_SET} />
           </div>
 
-          <span style={footer}>
+          <span style={footer} className="row no-gutter"d>
             <p>Benjamin Pettus 2016</p>
             <a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
             <p>benjaminpettus@gmail.com</p>
@@ -102,6 +103,10 @@ var navbar = {
     style: "none"
 }
 
+var barlinks = {
+  float: 'right',
+  paddingLeft: 10
+}
 var container = { 
   display: 'flex', 
   flexWrap: 'wrap',
@@ -123,14 +128,14 @@ var iconz = {
   listStyle: 'none'
 }
 
-var about = {
+var jumbo = {
   color: 'white',
   backgroundColor: 'green',
   flexDirection: 'column',
   // backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
   backgroundRepeat: 'no-repeat',
   height: 350,
-  paddingTop: 60
+  paddingTop: 60,
 
 }
 
