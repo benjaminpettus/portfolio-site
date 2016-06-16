@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from 'react-photo-gallery';
-
 import Navbar from 'react-bootstrap/lib/Navbar';
-
+import Jumbotron from 'react-bootstrap/lib/Jumbotron';
+import {Grid, Row, Col} from 'react-bootstrap/lib';
 
 
 
@@ -14,11 +14,11 @@ class App extends React.Component {
   render(){
     return (
         
-      <div className="container">
+      <div fluid className="container">
 
-       <Navbar inverse fluid fixedTop style={navi}>
+       <Navbar fluid fixedTop style={navi}>
      
-        <Navbar.Header>
+        <Navbar.Header pullRight>
           <Navbar.Brand>
             <a href="#">Logo</a>
           </Navbar.Brand>
@@ -26,25 +26,26 @@ class App extends React.Component {
         </Navbar.Header>
 
         <Navbar.Collapse>
-          <nav pullRight>
-            <a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
+          <nav>
+            <a href="https://www.linkedin.com/in/benjaminpettus"></a>
            
           </nav>
         </Navbar.Collapse>
-   
-      
       </Navbar>
      
           
-        
-          <div style={about}>
-            <h2>about</h2>
+      <Jumbotron>  
+        <div>
+          <h2>about</h2>
             <p>Web Developer/Designer<br />
-               Honolulu, Hawaii<br />
+                 Honolulu, Hawaii<br />
             </p>
-          </div>
+        </div>
+      </Jumbotron>
+    
 
-          <hr />
+
+     
 
           <div style={web}><h2>web</h2>
             <ul >
@@ -61,7 +62,7 @@ class App extends React.Component {
             </ul>
           </div>
 
-          <hr />
+     
 
           <div style={design}>
             <h2>design</h2>
@@ -86,7 +87,7 @@ class App extends React.Component {
 }
 var navi = {
   backgroundColor: 'green',
-  height: 75 
+  
 }
 var navbar = {
     marginBottom: 0,
@@ -98,12 +99,14 @@ var navbar = {
     lineHeight: 1.42857143,
     letterSpacing: 4,
     borderRadius: 0,
+    style: "none"
 }
 
 var container = { 
   display: 'flex', 
   flexWrap: 'wrap',
-  boxSizing: 'border-box',
+  boxSizing: 'border-box'
+
 }
 
 
@@ -121,12 +124,13 @@ var iconz = {
 }
 
 var about = {
-  color: 'black',
-  backgroundColor: 'white',
+  color: 'white',
+  backgroundColor: 'green',
   flexDirection: 'column',
   // backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
   backgroundRepeat: 'no-repeat',
-  height: 350
+  height: 350,
+  paddingTop: 60
 
 }
 
@@ -134,7 +138,7 @@ var web = {
   display: 'flex',
   color: 'black',
   flexDirection: 'column',
-  backgroundColor: 'white'
+  backgroundColor: 'orange'
 
 }
 
@@ -241,7 +245,8 @@ var footer = {
   alignItems: 'center',
   color: 'white',
   backgroundColor: 'gray',
-  height: 150
+  height: 150,
+  marginLeft: 0
 }
 
 export default App
