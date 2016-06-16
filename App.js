@@ -16,7 +16,7 @@ class App extends React.Component {
         
       <div className="container">
 
-       <Navbar inverse fluid fixedTop>
+       <Navbar inverse fluid fixedTop style={navi}>
      
         <Navbar.Header>
           <Navbar.Brand>
@@ -84,7 +84,10 @@ class App extends React.Component {
     );
   }
 }
-
+var navi = {
+  backgroundColor: 'green',
+  height: 75 
+}
 var navbar = {
     marginBottom: 0,
     backgroundColor: 'purple',
