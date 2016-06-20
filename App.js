@@ -27,8 +27,8 @@ class App extends React.Component {
         <Navbar.Collapse>
           <nav style={barlinks}>
           <ButtonToolbar>
-            <Button><a href="https://www.linkedin.com/in/benjaminpettus">LinkedIn</a></Button>
-            <Button><a href="https://github.com/benjaminpettus">Github</a></Button>
+            <Button bsStyle="link"><a href="https://www.linkedin.com/in/benjaminpettus">LinkedIn</a></Button>
+            <Button bsStyle="link"><a href="https://github.com/benjaminpettus">Github</a></Button>
           </ButtonToolbar>
           </nav>
         </Navbar.Collapse>
@@ -105,7 +105,9 @@ var navbar = {
 
 var barlinks = {
   float: 'right',
-  paddingLeft: 10
+  paddingLeft: 10,
+  paddingTop: 5
+
 }
 var container = { 
   display: 'flex', 
