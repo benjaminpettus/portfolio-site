@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Gallery from 'react-photo-gallery';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
-import {Grid, Row, Col} from 'react-bootstrap/lib';
+import {Grid, Row, Col, ButtonToolbar, Button} from 'react-bootstrap/lib';
 
 
 
@@ -12,9 +12,8 @@ import {Grid, Row, Col} from 'react-bootstrap/lib';
 
 class App extends React.Component {
   render(){
-    return (
-        
-      <div fluid className="container border-box">
+    return (    
+      <div fluid className="container no-gutter">
 
        <Navbar fluid fixedTop style={navi}>
      
@@ -27,27 +26,29 @@ class App extends React.Component {
 
         <Navbar.Collapse>
           <nav style={barlinks}>
-            <a href="https://www.linkedin.com/in/benjaminpettus">LinkedIn</a>
-            <a href="https://github.com/benjaminpettus">Github</a>
+          <ButtonToolbar>
+            <Button><a href="https://www.linkedin.com/in/benjaminpettus">LinkedIn</a></Button>
+            <Button><a href="https://github.com/benjaminpettus">Github</a></Button>
+          </ButtonToolbar>
           </nav>
         </Navbar.Collapse>
       </Navbar>
      
           
-      <Jumbotron style={jumbo} className="row no-gutter text-center">  
+      <div style={jumbo} className="row no-gutter text-center">  
         <div className="col-md-12">
           <h2>about</h2>
             <p>Web Developer/Designer<br />
                  Honolulu, Hawaii<br />
             </p>
         </div>
-      </Jumbotron>
+      </div>
     
 
 
      
 
-          <div style={web} className="row no-gutter">
+          <div fluid style={web} className="row no-gutter text-center">
           <h2>web</h2>
             <ul >
               <div>
@@ -70,7 +71,7 @@ class App extends React.Component {
              <Gallery photos={PHOTO_SET} />
           </div>
 
-          <span style={footer} className="row no-gutter"d>
+          <span style={footer} className="row no-gutter">
             <p>Benjamin Pettus 2016</p>
             <a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
             <p>benjaminpettus@gmail.com</p>
@@ -81,7 +82,6 @@ class App extends React.Component {
         </div>
       
       
-        
 
     );
   }
@@ -111,6 +111,7 @@ var container = {
   display: 'flex', 
   flexWrap: 'wrap',
   boxSizing: 'border-box'
+  
 
 }
 
@@ -140,25 +141,21 @@ var jumbo = {
 }
 
 var web = { 
-  display: 'flex',
-  color: 'black',
-  flexDirection: 'column',
+  color: 'white',
   backgroundColor: 'orange'
 
 }
 
 var projects = {
   display: 'flex',
-  color: 'black',
+  color: 'white',
   flexDirection: 'row',
   justifyContent: 'space-around'
  }
 
 var project_button = {
   border: 'none',
-  backgroundColor: 'white',
-  color: 'purple'
- 
+  backgroundColor: 'white'
 }
 
 var rule = {
@@ -250,8 +247,7 @@ var footer = {
   alignItems: 'center',
   color: 'white',
   backgroundColor: 'gray',
-  height: 150,
-  marginLeft: 0
+  height: 150
 }
 
 export default App
