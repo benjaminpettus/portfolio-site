@@ -13,7 +13,7 @@ import {Grid, Row, Col, ButtonToolbar, Button} from 'react-bootstrap/lib';
 class App extends React.Component {
   render(){
     return (    
-      <div fluid className="container no-gutter">
+      <div fluid className="container-fluid no-gutter">
 
        <Navbar fluid fixedTop style={navi}>
      
@@ -35,7 +35,7 @@ class App extends React.Component {
       </Navbar>
      
           
-      <div style={jumbo} className="row no-gutter text-center">  
+      <div style={jumbo} sm={6} lg={3} className="row no-gutter text-center">  
         <div className="col-md-12">
           <h2>about</h2>
             <p>Web Developer/Designer<br />
@@ -43,39 +43,37 @@ class App extends React.Component {
             </p>
         </div>
       </div>
-    
-
 
      
 
-          <div fluid style={web} className="row no-gutter text-center">
-          <h2>web</h2>
-            <ul >
+      <div style={web} className="row no-gutter text-center">
+      <h2>web</h2>
+        <ul >
+          <div>
+          
+            <li style={projects}>Get-A-Life
+              <div>Map-based events app built using Angular, Ionic, and Leaflet</div>
               <div>
-                <divider />
-                <li style={projects}>Get-A-Life
-                  <div>Map-based events app built using Angular, Ionic, and Leaflet</div>
-                  <div>
-                    <button style={project_button}><a href="http://getalife.events">View Project</a></button>
-                  </div>
-                </li>
-              
+                <button style={project_button}><a href="http://getalife.events">View Project</a></button>
               </div>
-            </ul>
+            </li>
+          
           </div>
+        </ul>
+      </div>
 
      
 
-          <div style={design} className="row no-gutter">
-            <h2>design</h2>
-             <Gallery photos={PHOTO_SET} />
-          </div>
+      <div style={design} className="row no-gutter">
+        <h2>design</h2>
+         <Gallery photos={PHOTO_SET} />
+      </div>
 
-          <span style={footer} className="row no-gutter">
-            <p>Benjamin Pettus 2016</p>
-            <a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
-            <p>benjaminpettus@gmail.com</p>
-          </span>
+      <span style={footer} className="row no-gutter">
+        <p>Benjamin Pettus 2016</p>
+        <a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
+        <p>benjaminpettus@gmail.com</p>
+      </span>
 
     
 
@@ -109,9 +107,8 @@ var barlinks = {
   paddingTop: 5
 
 }
-var container = { 
-  display: 'flex', 
-  flexWrap: 'wrap',
+var container = {  
+  
   boxSizing: 'border-box'
   
 
@@ -119,22 +116,16 @@ var container = {
 
 
 var mainNav = {
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'flex-end',
   color: 'black',
   height: 70
 }
 var iconz = {
-  display: 'flex',
-  flexDirection: 'row',
   listStyle: 'none'
 }
 
 var jumbo = {
   color: 'white',
   backgroundColor: 'green',
-  flexDirection: 'column',
   // backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
   backgroundRepeat: 'no-repeat',
   height: 350,
@@ -149,10 +140,8 @@ var web = {
 }
 
 var projects = {
-  display: 'flex',
   color: 'white',
-  flexDirection: 'row',
-  justifyContent: 'space-around'
+  
  }
 
 var project_button = {
@@ -161,13 +150,11 @@ var project_button = {
 }
 
 var rule = {
-  display: 'flex',
-  alignItems: 'center'
+ 
 
 }
 
 var design = {
-  display: 'flex',
   color: 'white'
   
   
@@ -243,11 +230,7 @@ const PHOTO_SET = [
 ];
 
 var footer = {
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'center',
-  alignItems: 'center',
-  color: 'white',
+  color: 'black',
   backgroundColor: 'gray',
   height: 150
 }
