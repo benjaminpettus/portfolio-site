@@ -4,6 +4,7 @@ import Gallery from 'react-photo-gallery';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
 import {Grid, Row, Col, ButtonToolbar, Button, Glyphicon} from 'react-bootstrap/lib';
+import {FontAwesome, Icon} from 'react-fontawesome';
 
 
 
@@ -27,8 +28,13 @@ class App extends React.Component {
         <Navbar.Collapse>
           <nav style={barlinks}>
           <ButtonToolbar>
-            <Button bsStyle="link"><a href="https://www.linkedin.com/in/benjaminpettus">LinkedIn</a></Button>
-            <Button bsStyle="link"><a href="https://github.com/benjaminpettus">Github</a></Button>
+            <Button bsStyle="link">
+              <a href="https://www.linkedin.com/in/benjaminpettus">
+                <i className="fa fa-linkedin-square fa-2x" 
+                   size="medium"></i>
+              </a>
+            </Button>
+            <Button bsStyle="link"><a href="https://github.com/benjaminpettus"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a></Button>
           </ButtonToolbar>
           </nav>
         </Navbar.Collapse>
@@ -88,7 +94,8 @@ class App extends React.Component {
   }
 }
 var navi = {
-  backgroundColor: 'green',
+  color: 'black',
+  backgroundColor: 'transparent',
   borderColor: 'transparent'
   
 }
