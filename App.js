@@ -78,7 +78,7 @@ class App extends React.Component {
 
       <footer style={foot} className="row no-gutter text-center">
         
-        <Button><Glyphicon glyph="chevron-up" /></Button>
+        <Button bsStyle="link"><a href="#"><Glyphicon glyph="chevron-up" /></a></Button>
       
         <p>Benjamin Pettus 2016</p>
         <p>benjaminpettus@gmail.com</p>
