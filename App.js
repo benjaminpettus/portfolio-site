@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Gallery from 'react-photo-gallery';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
-import {Grid, Row, Col, ButtonToolbar, Button} from 'react-bootstrap/lib';
+import {Grid, Row, Col, ButtonToolbar, Button, Glyphicon} from 'react-bootstrap/lib';
 
 
 
@@ -35,7 +35,7 @@ class App extends React.Component {
       </Navbar>
      
           
-      <div style={jumbo} sm={6} lg={3} className="row no-gutter text-center">  
+      <div style={first} className="row no-gutter text-center">  
         <div className="col-md-12">
           <h2>about</h2>
             <p>Web Developer/Designer<br />
@@ -48,18 +48,19 @@ class App extends React.Component {
 
       <div style={web} className="row no-gutter text-center">
       <h2>web</h2>
-        <ul >
           <div>
-          
+          <Grid>
+            <Row>
             <li style={projects}>Get-A-Life
-              <div>Map-based events app built using Angular, Ionic, and Leaflet</div>
-              <div>
+              <Col>Map-based events app built using Angular, Ionic, and Leaflet</Col>
+              <Col>
                 <button style={project_button}><a href="http://getalife.events">View Project</a></button>
-              </div>
+              </Col>
             </li>
-          
+            </Row>
+          </Grid>
           </div>
-        </ul>
+      
       </div>
 
      
@@ -69,15 +70,17 @@ class App extends React.Component {
          <Gallery photos={PHOTO_SET} />
       </div>
 
-      <span style={footer} className="row no-gutter">
+      <footer style={foot} className="row no-gutter text-center">
+        
+        <Button><Glyphicon glyph="chevron-up" /></Button>
+      
         <p>Benjamin Pettus 2016</p>
-        <a href="https://www.linkedin.com/in/benjaminpettus">linkedin</a>
         <p>benjaminpettus@gmail.com</p>
-      </span>
+      </footer>
 
     
 
-        </div>
+    </div>
       
       
 
@@ -86,6 +89,7 @@ class App extends React.Component {
 }
 var navi = {
   backgroundColor: 'green',
+  borderColor: 'transparent'
   
 }
 var navbar = {
@@ -123,12 +127,12 @@ var iconz = {
   listStyle: 'none'
 }
 
-var jumbo = {
+var first = {
   color: 'white',
   backgroundColor: 'green',
   // backgroundImage : 'url(' + "./assets/img/starry.jpg" + ')',
   backgroundRepeat: 'no-repeat',
-  height: 350,
+  height: 600,
   paddingTop: 60,
 
 }
@@ -141,7 +145,8 @@ var web = {
 
 var projects = {
   color: 'white',
-  
+  listStyle: 'none',
+  display: 'inline-block'
  }
 
 var project_button = {
@@ -149,10 +154,7 @@ var project_button = {
   backgroundColor: 'white'
 }
 
-var rule = {
- 
 
-}
 
 var design = {
   color: 'white'
@@ -229,10 +231,11 @@ const PHOTO_SET = [
   }
 ];
 
-var footer = {
-  color: 'black',
-  backgroundColor: 'gray',
-  height: 150
+var foot = {
+  color: 'white',
+  backgroundColor: 'green',
+  height: 150,
+  borderColor: 'transparent' 
 }
 
 export default App
