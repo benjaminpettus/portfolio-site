@@ -20,7 +20,7 @@ class App extends React.Component {
      
         <Navbar.Header pullRight>
           <Navbar.Brand>
-            <a href="#">Logo</a>
+            <a href="#">Benjamin Pettus</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -55,24 +55,21 @@ class App extends React.Component {
       <div style={web} className="row no-gutter text-center">
       <h2>web</h2>
           <div>
-          <Grid>
-            <Row>
-            <li style={projects}>Get-A-Life
-              <Col>Map-based events app built using Angular, Ionic, and Leaflet</Col>
-              <Col>
+            <div style={projects}>Get-A-Life
+            <div><img src={'http://lorempixel.com/g/200/200'} className="img-responsive"/></div>
+              <div>Map-based events app built using Angular, Ionic, and Leaflet</div>
+              <div>
                 <button style={project_button}><a href="http://getalife.events">View Project</a></button>
-              </Col>
-            </li>
-            </Row>
-          </Grid>
+              </div>
+            </div>         
           </div>
       
       </div>
 
      
 
-      <div style={design} className="row no-gutter">
-        <h2>design</h2>
+      <div style={design} className="row no-gutter text-center">
+      <h2>design</h2>
          <Gallery photos={PHOTO_SET} />
       </div>
 
@@ -146,14 +143,14 @@ var first = {
 
 var web = { 
   color: 'white',
-  backgroundColor: 'orange'
+  backgroundColor: 'orange',
+  height: 400
 
 }
 
 var projects = {
   color: 'white',
-  listStyle: 'none',
-  display: 'inline-block'
+  listStyle: 'none'
  }
 
 var project_button = {
@@ -164,7 +161,7 @@ var project_button = {
 
 
 var design = {
-  color: 'white'
+  color: 'black'
   
   
 }
